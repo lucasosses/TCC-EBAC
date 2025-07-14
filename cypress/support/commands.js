@@ -1,6 +1,17 @@
-import objetos from './page_objects/objetos';
+Cypress.Commands.add('login', (usuario, senha) => {
+  cy.get('#username').type(usuario);
+  cy.get('#password').type(senha, { log: false });
+  cy.get('.woocommerce-form > .button').click();
+});
 
 Cypress.Commands.add('visitHome', () => {
-    cy.visit('/');
-})
-// Seguir para pagaina de Login /minha-conta
+  cy.visit('/');
+});
+
+Cypress.Commands.add('visitLogin', () => {
+  cy.get('.icon-user-unfollow').click();
+});
+
+Cypress.Commands.add('visitProdutos', () => {
+  cy.get('#primary-menu > .menu-item-629 > a').click();
+});
