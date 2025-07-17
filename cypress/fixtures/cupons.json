@@ -1,0 +1,16 @@
+[
+  {
+    "cupom": "CUPOM10",
+    "desconto": "10%"
+  },
+
+  {
+    "cupom": "CUPOM15",
+    "desconto": "15%"
+  },
+
+  {
+    "cupom": "NENHUM",
+    "desconto": "0%"
+  }
+]

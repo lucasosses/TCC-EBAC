@@ -4,7 +4,7 @@ export class ProductPage {
   }
 
   definirTamanho() {
-    cy.get('.button-variable-item-S').click();
+    cy.get('.button-variable-item-L').click();
   }
 
   definirCor() {
@@ -23,7 +23,6 @@ export class ProductPage {
     cy.get('.woocommerce-message').should('contain', 'carrinho');
   }
 
-  /** ✅ novo método */
   validarMensagemDeErro() {
     cy.get('.woocommerce-error, .woocommerce-message')
       .should('contain', 'Quantidade máxima permitida é 10');
